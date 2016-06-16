@@ -43,4 +43,14 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
     	<url-pattern>/edit</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+    	<servlet-name>users</servlet-name>
+    	<servlet-class>miffy.UsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>users</servlet-name>
+    	<url-pattern>/users</url-pattern>
+	</servlet-mapping>
+
+	
 </web-app>
