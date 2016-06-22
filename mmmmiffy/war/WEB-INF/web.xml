@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Mmmmiffy</servlet-name>
+		<servlet-class>mmmmiffy.MmmmiffyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Mmmmiffy</servlet-name>
+		<url-pattern>/mmmmiffy</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+    	<servlet-name>add</servlet-name>
+    	<servlet-class>mmmmiffy.AddLinkDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>add</servlet-name>
+    	<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>del</servlet-name>
+    	<servlet-class>mmmmiffy.DelLinkDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>del</servlet-name>
+    	<url-pattern>/del</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>edit</servlet-name>
+    	<servlet-class>mmmmiffy.EditLinkDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>edit</servlet-name>
+    	<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>users</servlet-name>
+    	<servlet-class>mmmmiffy.UsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>users</servlet-name>
+    	<url-pattern>/users</url-pattern>
+	</servlet-mapping>
+</web-app>
